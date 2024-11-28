@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row-reverse; 
+    height: 100vh;
+}
+
+.portfolio-container {
+    display: flex;
+    width: 100%;
+
+}
+
+button {
+    background-color:rgb(45, 146, 45); 
+    color: white;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px;
+    cursor: pointer; 
+
+}
+
+.left-panel {
+    background-image: url(flower.jpg);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-left: 2px solid peachpuff;
+}
+
+.left-panel img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.right-panel {
+    padding: 20px;
+    width: 70%;
+    overflow-y: auto;
+    background-image: url(yoga.png);
+}
+
+.about, .services,.service-box,.experience,.hobbies,.contact {
+    margin-bottom: 30px;
+    
+}
+
+p {
+    color:black;
+    line-height:1.5;
+}
+li{
+    color:black;
+    line-height:1.5;
+}
+.service-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background:peachpuff;
+    padding: 15px;
+    border: 1px solid peachpuff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+.details p {
+    margin: 5px 0;
+}
